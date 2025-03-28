@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Open-Dyslexic;
+    src: url(opendyslexic-0.91.12/compiled/OpenDyslexic-Regular.woff);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    background-image: url("startile.png");
+    background-color: #00404e;
+    color: aliceblue;
+    font-family: Open-Dyslexic;
+}
+a{
+    color: aliceblue;
+
+}
+img{
+    background-color: #00404e;
+}
+.navbar{
+    position: absolute;
+    border-bottom: solid;
+    display: block;
+    background-color: #00404e;
+}
+.content{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+.links{
+    border: solid;
+    background-color: #00404e;
+}
+.content-main{
+    border: solid;
+    background-color: #00404e;
+}
+.nav{
+    border: solid;
+    background-color: #00404e;
+}
