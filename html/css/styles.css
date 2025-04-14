@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Open-Dyslexic;
+    src: url(opendyslexic-0.91.12/compiled/OpenDyslexic-Regular.woff);
+}
+
+.heading{
+    margin-top: 40px;
+}
+.heading a{
+    border: none;
+    background-color: #0f380f;
+    color: #306230;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    background-color: #306230;
+    color: #0f380f;
+    font-family: Open-Dyslexic;
+}
+p::selection{
+    color: #9bbc0f;
+}
+h1::selection{
+    color: #9bbc0f;
+}
+.content h1 i::selection{
+    color: #9bbc0f;
+}
+
+a{
+    color: #0f380f;
+}
+a::selection{
+    color: #9bbc0f;
+}
+a:hover{
+    color: #9bbc0f;
+}
+hr{
+    color: #306230;
+}
+
+/* DROPDOWN AND NAVBAR CONTENT */
+
+.navbar{
+    display: block;
+    background-color: #0f380f;
+    color: #306230;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0px;
+}
+.navbar .flex-container{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+.navbar .flex-container span{
+    padding: 8px;
+}
+.navbar .flex-container span a{
+    color: #306230;
+    text-decoration: none;
+}
+.navbar .flex-container span a:hover{
+    color: #9bbc0f;
+}
+.navbar .flex-container div{
+    padding: 8px;
+}
+.home{
+    font-size: larger;
+}
+.home .vl{
+    border-left: 3px solid #306230;
+    height: 5px;
+    margin-left: 4px;
+}
+
+.bedroomdb{
+    position: relative;
+    display: inline-block;
+}
+.bedroomdb-content{
+    position: absolute;
+    display: none;
+}
+.bedroomdb span:hover{
+    color: #9bbc0f;
+}
+.bedroomdb:hover .bedroomdb-content{
+    display: block;
+}
+.bedroomdb div{
+    color: #306230;
+    background-color: #0f380f;
+}
+.bedroomdb div ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.bedroomdb div ul a{
+    color: #306230;
+}
+.bedroomdb div ul a:hover{
+    color: #9bbc0f;
+}
+
+.officedb{
+    position: relative;
+    display: inline-block;
+}
+.officedb span:hover{
+    color: #9bbc0f;
+}
+.officedb-content{
+    position: absolute;
+    display: none;
+}
+.officedb:hover .officedb-content{
+    display: block;
+}
+.officedb div{
+    color: #306230;
+    background-color: #0f380f;
+}
+.officedb div ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.officedb-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.officedb-flex-container a img{
+    width: 30px;
+}
+.officedb-content li a{
+    color: #306230;
+}
+.officedb-content li a:hover{
+    color: #9bbc0f;
+}
+
+/*
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+*/
+
+/* END OF DROPDOWN AND NAVBAR CONTENT */
+
+
+
+.content{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    padding: 15px;
+}
+.content h1{
+    margin-top: 40px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.content-main{
+    grid-column: 1;
+    padding: 10px;
+}
+.links{
+    border: solid;
+    background-color: #306230;
+    border-color: #8bac0f;
+    border-radius: 5px;
+
+}
+.aboutme{
+    display: flex;
+    border: solid;
+    border-color: #8bac0f;
+    border-radius: 5px;
+    float: right;
+    padding: 5px;
+    margin: 2px;
+    align-items: center;
+    grid-column: 2;
+}
+.aboutme .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.aboutme .flex-container .heading {
+    font-size: 16pt;
+    text-decoration: solid #0f380f;
+    margin-bottom: 8px;
+}
+.aboutme .flex-container .label {
+    font-size: 14pt;
+}
+.aboutme .flex-container .description {
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+.content-secondary{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 5px;
+}
+.content-secondary h1{
+    text-align: start;
+}
+span::selection{
+    color: #9bbc0f;
+}
+
+.bookshelf-content{
+    display: grid;
+    justify-content: normal;
+    align-items: flex-start;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    padding: 15px;
+}
+.bookshelf-content h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 50px;
+}
+.collection{
+    border: solid #8bac0f;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.collection img{
+    margin: 5px;
+}
